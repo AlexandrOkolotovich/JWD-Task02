@@ -14,9 +14,9 @@ public class ApplianceDAOImpl implements ApplianceDAO {
 
     public List<Appliance> find(Criteria criteria) throws IOException {
 
-        String pathToBD = "resources/appliances_db.txt";
+        String pathToDB = "resources/appliances_db.txt";
 
-        ApplianceReader applianceReader = new ApplianceReader(pathToBD);
+        ApplianceReader applianceReader = new ApplianceReader(pathToDB);
         List<String> applianceData;
 
         if (criteria.getGroupSearchName()==null) {
